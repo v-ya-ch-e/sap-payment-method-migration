@@ -7,9 +7,11 @@ A collection of expert-level prompts paired with domain context files, designed 
 ```
 ├── CLAUDE.md          # Domain knowledge context (fed to the LLM alongside the prompt)
 ├── prompts/           # Curated prompts
-│   └── sap-payment-method-migration.md
+│   ├── sap-payment-method-migration.md
+│   └── RU_sap-payment-method-migration.md       # Russian translation
 └── responses/         # Generated responses
-    └── sap-payment-method-migration-response.md
+    ├── sap-payment-method-migration-response.md
+    └── RU_sap-payment-method-migration-response.md  # Russian translation
 ```
 
 ## How It Works
@@ -29,6 +31,7 @@ Covers phased migration of payment formats (e.g., legacy RFFO\* → ISO 20022 pa
 - **Context:** `CLAUDE.md` — FBZP configuration, Payment Method Supplements, PMW format resolution, key tables (`T042*`, `REGUH`/`REGUP`), BAdIs, and risk mitigation patterns.
 - **Prompt:** `prompts/sap-payment-method-migration.md` — asks for approach evaluation, phased timeline, comparison table, risk analysis, and a ready-to-use checklist.
 - **Response:** `responses/sap-payment-method-migration-response.md` — full migration strategy recommending Payment Method Supplements as the primary lever, with a 12–16 week phased rollout plan.
+- **Russian translations:** `prompts/RU_sap-payment-method-migration.md` and `responses/RU_sap-payment-method-migration-response.md`.
 
 ## Usage
 
